@@ -1,0 +1,3 @@
+# Solo para regenerar las figuras; no es necesario para usar la aplicación.
+-r ../requirements.txt
+matplotlib>=3.7,<3.10

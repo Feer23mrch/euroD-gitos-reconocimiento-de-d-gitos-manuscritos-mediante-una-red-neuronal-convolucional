@@ -1,0 +1,209 @@
+{
+  "modelo": "CNN 24-48-64 + 128",
+  "dataset": "MNIST",
+  "semilla": 42,
+  "version_preparacion": 2,
+  "entrenamiento": 55000,
+  "validacion": 5000,
+  "prueba": 10000,
+  "epocas": 10,
+  "mejor_epoca": 10,
+  "exactitud_prueba": 0.9942,
+  "matriz": [
+    [
+      979,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1131,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1031,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1004,
+      0,
+      4,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      979,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      4,
+      0,
+      886,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      2,
+      1,
+      0,
+      1,
+      2,
+      949,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      4,
+      0,
+      0,
+      0,
+      0,
+      1021,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      968,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      8,
+      1,
+      0,
+      3,
+      3,
+      994
+    ]
+  ],
+  "historial": [
+    {
+      "epoca": 1,
+      "perdida_entrenamiento": 0.4579087575977499,
+      "exactitud_entrenamiento": 0.8527818181818182,
+      "perdida_validacion": 0.07341532196998596,
+      "exactitud_validacion": 0.9772
+    },
+    {
+      "epoca": 2,
+      "perdida_entrenamiento": 0.13091413549401543,
+      "exactitud_entrenamiento": 0.9604181818181818,
+      "perdida_validacion": 0.056624918380379675,
+      "exactitud_validacion": 0.9808
+    },
+    {
+      "epoca": 3,
+      "perdida_entrenamiento": 0.09682197784618898,
+      "exactitud_entrenamiento": 0.9708,
+      "perdida_validacion": 0.04779718667566776,
+      "exactitud_validacion": 0.9854
+    },
+    {
+      "epoca": 4,
+      "perdida_entrenamiento": 0.07926206372434443,
+      "exactitud_entrenamiento": 0.9767454545454546,
+      "perdida_validacion": 0.03592529765367508,
+      "exactitud_validacion": 0.9886
+    },
+    {
+      "epoca": 5,
+      "perdida_entrenamiento": 0.06573594058860432,
+      "exactitud_entrenamiento": 0.979909090909091,
+      "perdida_validacion": 0.03070661088526249,
+      "exactitud_validacion": 0.9896
+    },
+    {
+      "epoca": 6,
+      "perdida_entrenamiento": 0.057356742052598435,
+      "exactitud_entrenamiento": 0.9821090909090909,
+      "perdida_validacion": 0.03250904499515891,
+      "exactitud_validacion": 0.9896
+    },
+    {
+      "epoca": 7,
+      "perdida_entrenamiento": 0.051121009732376446,
+      "exactitud_entrenamiento": 0.9841454545454545,
+      "perdida_validacion": 0.028594944228231906,
+      "exactitud_validacion": 0.9902
+    },
+    {
+      "epoca": 8,
+      "perdida_entrenamiento": 0.046030570434982127,
+      "exactitud_entrenamiento": 0.9855272727272727,
+      "perdida_validacion": 0.025636257776618005,
+      "exactitud_validacion": 0.9916
+    },
+    {
+      "epoca": 9,
+      "perdida_entrenamiento": 0.042674325520883905,
+      "exactitud_entrenamiento": 0.9872909090909091,
+      "perdida_validacion": 0.025970375216007233,
+      "exactitud_validacion": 0.9916
+    },
+    {
+      "epoca": 10,
+      "perdida_entrenamiento": 0.03892909364158457,
+      "exactitud_entrenamiento": 0.9884363636363637,
+      "perdida_validacion": 0.025043405193835497,
+      "exactitud_validacion": 0.992
+    }
+  ],
+  "segundos": 122.5,
+  "fecha_utc": "2026-09-28T16:06:27.565213+00:00",
+  "torch": "2.8.0"
+}

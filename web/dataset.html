@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Explorar MNIST · NeuroDígitos</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/dataset.css"><script src="/dataset.js" defer></script></head>
+<body>
+<header class="header"><a class="brand" href="/"><span class="brand-icon" aria-hidden="true">n<span>·</span></span>NeuroDígitos</a><a href="/" class="back-link">← Volver a reconocer</a></header>
+<main>
+<div class="intro"><span class="eyebrow">CONOCE LOS DATOS</span><h1>Detrás de cada predicción.</h1><p>Explora las imágenes originales de MNIST y sus etiquetas reales. Cada recuadro es un número escrito a mano.</p></div>
+<div class="metrics dataset-metrics"><article class="card"><span class="small-label">ENTRENAMIENTO</span><strong>55 000</strong><p>La red aprende con estas imágenes.</p></article><article class="card"><span class="small-label">VALIDACIÓN</span><strong>5 000</strong><p>Sirven para elegir la mejor época.</p></article><article class="card"><span class="small-label">PRUEBA</span><strong>10 000</strong><p>Miden el resultado final del modelo.</p></article></div>
+<section class="card" aria-label="Galería de MNIST">
+<div class="dataset-controls"><label>Partición<select id="split"><option value="prueba">Prueba · 10 000</option><option value="entrenamiento">Entrenamiento · 55 000</option><option value="validacion">Validación · 5 000</option></select></label><label>Dígito<select id="digit-filter"><option value="todos">Todos los dígitos</option><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select></label><div class="dataset-counter" id="count"></div></div>
+<p class="helper">Imágenes originales de 28 × 28 píxeles, ampliadas para verlas mejor. La etiqueta indica la clase real, no una predicción.</p>
+<p id="dataset-status" role="status" aria-live="polite"></p>
+<div class="dataset-grid" id="gallery" aria-busy="true"></div>
+<div class="pagination"><button id="prev" class="secondary" disabled>← Anterior</button><span id="page"></span><button id="next" class="secondary" disabled>Siguiente →</button></div><button id="retry" class="secondary" hidden>Reintentar carga</button>
+</section>
+<section class="card dataset-source"><h2>¿De dónde viene MNIST?</h2><p>MNIST contiene 70 000 imágenes en escala de grises, con etiquetas del 0 al 9. La distribución original incluye 60 000 imágenes de entrenamiento y 10 000 de prueba. En este proyecto separamos 5 000 de las primeras para validación, sin mezclarlas con la prueba.</p><p>Las imágenes se descargan del repositorio de Keras y se guardan en <code>datos/mnist.npz</code>. Los índices mostrados identifican la posición original en <code>x_train</code> o <code>x_test</code>; empiezan en cero. Puedes guardar cada imagen para inspeccionarla.</p><div class="source-links"><a href="https://keras.io/api/datasets/mnist/" target="_blank" rel="noopener">Documentación de MNIST ↗</a><a href="https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz">Descargar dataset original (11 MB) ↓</a></div><p class="helper">MNIST: Yann LeCun y Corinna Cortes, derivado de NIST. Licencia CC BY-SA 3.0 según la documentación de Keras.</p></section>
+</main><footer class="footer"><span>NeuroDígitos</span><span>Aprender, dibujar, experimentar.</span></footer>
+</body></html>
